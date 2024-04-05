@@ -31,7 +31,7 @@
   ],
   "service": [
     {
-      "id": "did:web:id-plus.localhost%3A8443#plain",
+      "id": "did:web:id-plus-example.identinet.io#presentation",
       "type": "LinkedVerifiablePresentation",
       "serviceEndpoint": "https://id-plus-example.identinet.io/.well-known/presentation.json"
     }
