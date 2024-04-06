@@ -1,4 +1,4 @@
-## identinet-plugin Demo: DID present, Verifiable Credential valid
+## Demo: DID present, Verifiable Credential valid
 
 This page is part of the [did:hack](https://didhack.xyz/) hackathon project
 [identinet-plugin](https://github.com/identinet/identinet-plugin). It
