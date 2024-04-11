@@ -14,25 +14,75 @@
       "@context":
       [
         "https://www.w3.org/2018/credentials/v1",
-        "https://w3id.org/security/suites/ed25519-2020/v1"
+        "https://w3id.org/security/suites/ed25519-2020/v1",
+        {
+          "schema": "https://schema.org/"
+        }
       ],
       "type":
       [
-        "VerifiableCredential"
+        "VerifiableCredential",
+        "schema:Organization"
       ],
       "credentialSubject":
       {
-        "id": "did:web:id-plus-example.identinet.io"
+        "id": "did:web:id-plus-example.identinet.io",
+        "schema:vatID": "987654321",
+        "schema:taxID": "132456789",
+        "schema:leiCode": "54321",
+        "schema:legalName": "Example Company LLC",
+        "schema:location":
+        {
+          "schema:addressCountry": "Example Country",
+          "schema:addressLocality": "Example City",
+          "schema:postalCode": "12345",
+          "schema:streetAddress": "1 Example Street",
+          "type": "schema:PostalAddress"
+        },
+        "schema:telephone": "+123456789",
+        "schema:email": "support@example.com"
       },
       "issuer": "did:web:id-plus-example.identinet.io",
-      "issuanceDate": "2024-04-06T15:08:23Z",
+      "issuanceDate": "2024-04-11T12:41:33Z",
       "proof":
       {
         "type": "Ed25519Signature2020",
         "proofPurpose": "assertionMethod",
-        "proofValue": "z3DXQnQBxd4rminuwAWzhuMzbXTh6DDyZhn2kfRUTg9E8xpGBwf9zChzbPBVsFigcyjYUDHH8mkKQNr7zr4HmBYEc",
+        "proofValue": "zRRBshNhf7BrJ1bUGuNjUrapK2g5b9w8eQbVmV5EHh8jhmJN47MeVgVzuFDueUGCRuC22gTPoidaV8YNUcPWWBZ6",
         "verificationMethod": "did:web:id-plus-example.identinet.io#z6Mknz5Gcvc4PNCQadiyspQ7j4Le9L7Fh7jmRJwT5CpunSc2",
-        "created": "2024-04-06T15:08:24.153261328Z"
+        "created": "2024-04-11T12:41:33.977133210Z"
+      }
+    },
+    {
+      "@context":
+      [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://w3id.org/security/suites/ed25519-2020/v1",
+        {
+          "schema": "https://schema.org/"
+        }
+      ],
+      "type":
+      [
+        "VerifiableCredential",
+        "schema:Brand"
+      ],
+      "credentialSubject":
+      {
+        "id": "did:web:id-plus-example.identinet.io",
+        "schema:name": "Example Company",
+        "schema:url": "https://euipo.europa.eu/eSearch/#details/trademarks/1234567890",
+        "schema:identifier": "1234567890"
+      },
+      "issuer": "did:web:id-plus-example.identinet.io",
+      "issuanceDate": "2024-04-11T12:41:34Z",
+      "proof":
+      {
+        "type": "Ed25519Signature2020",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "zjtK1dwzwQpNeY3VbHP9HtaPu2AU8PGPwiXKJS6kmzungH4USNWCTKafTpGgHkN7v1FZr3H5h4XKqjxDokZT38Fh",
+        "verificationMethod": "did:web:id-plus-example.identinet.io#z6Mknz5Gcvc4PNCQadiyspQ7j4Le9L7Fh7jmRJwT5CpunSc2",
+        "created": "2024-04-11T12:41:34.320204298Z"
       }
     }
   ],
@@ -40,9 +90,9 @@
   {
     "type": "Ed25519Signature2020",
     "proofPurpose": "assertionMethod",
-    "proofValue": "z3nZqew7hoAnEBpV29XAtVZr1VLvx6C1xg98ogWUa6c5nEGHahmKNnGA9Cwg1noHCKSuvy4N7BS2aB6aAkTkbD4e",
+    "proofValue": "z3dteQphLWWGGjBfsiCvz5hgBBNBpFHq7M3jRqZPTDzEL8Y4dCLcfxURS23UZFGVoKbVjxh2DtW8Lir4FHxFK8PrX",
     "verificationMethod": "did:web:id-plus-example.identinet.io#z6Mknz5Gcvc4PNCQadiyspQ7j4Le9L7Fh7jmRJwT5CpunSc2",
-    "created": "2024-04-06T15:08:24.416323811Z"
+    "created": "2024-04-11T12:41:34.656715144Z"
   },
   "holder": "did:web:id-plus-example.identinet.io"
 }
