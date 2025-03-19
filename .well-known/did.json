@@ -39,7 +39,7 @@
       "serviceEndpoint": "https://id-plus-well-known-example.identinet.io/.well-known/presentation.json"
     },
     {
-      "id": "did:web:id-broken-plus-well-known.localhost%3A8443#domain",
+      "id": "did:web:id-plus-well-known-example.identinet.io#domain",
       "type": "LinkedDomains",
       "serviceEndpoint": "https://id-plus-well-known-example.identinet.io"
     }
